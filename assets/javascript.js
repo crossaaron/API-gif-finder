@@ -21,5 +21,21 @@ $("button").on("click", function() {
 
             $("#gifs-appear-here").prepend(gifDiv);
           }
+
         });
     });
+
+$("#add-movie").on("click", function(event) {
+        event.preventDefault();
+        // This line of code will grab the input from the textbox
+        var movie = $("#movie-input").val().trim();
+
+        // The movie from the textbox is then added to our array
+        
+        movies.push(movie);
+
+        // Calling renderButtons which handles the processing of our movie array
+        renderButtons();
+      });
+
+
