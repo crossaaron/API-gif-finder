@@ -11,25 +11,31 @@
 
   <body>
     
-    <div id="buttons">
-      <button data-person="arnold schwarzenegger">
-        I'll be back
-      </button>
-      <button data-person="michael j fox">
-        My happiness grows in direct proportion to my acceptance,
-        and in inverse proportion to my expectations.
-      </button>
+    <div class="container">
+    <h1>Fun GIF search</h1>
+
+    <!-- Rendered buttons will get dumped Here  -->
+    <div id="buttons-view"></div>
+      <div id="buttons">
+        <button data-name="arnold schwarzenegger">
+          arnold schwarzenegger
+        </button>
+        <button data-name="michael j fox">
+          michael j fox
+        </button>
+      </div>
     </div>
     
-    
-    <div id="buttons-view"></div>
+    <div class="container">
+     <div id="newButton"></div>
       <form id="addGif-form">
-        <label for="movie-input">Add a Movie Bro</label>
-        <input type="text" id="movie-input"><br>
+        <label for="gif-input">Enter GIF Here</label>
+        <input type="text" id="gif-input"><br>
 
-        <!-- Button triggers new movie to be added -->
-        <input id="add-movie" type="submit" value="Add a Movie Bro">
+        <!-- Button triggers new gif to be added -->
+        <input id="add-gif" type="submit" value="Find those Gifs!">
       </form>
+    </div>
    
 
   <div id="gifs-appear-here">
