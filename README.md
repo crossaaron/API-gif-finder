@@ -1,1 +1,1 @@
-# week-6_api
+# Basic API usage for generating static content from AJAX requests
